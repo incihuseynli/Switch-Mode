@@ -1,7 +1,10 @@
 const button = document.querySelector("#btn");
+const spanText = document.querySelector("span");
 const text = document.querySelector(".info-text");
 
 let darkMode = localStorage.getItem("darkMode");
+
+spanText.innerHTML = "Click for change modes";
 
 const activateDarkMode = () => {
   button.classList.add("fa-sun");
